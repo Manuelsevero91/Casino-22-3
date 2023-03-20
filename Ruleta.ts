@@ -22,24 +22,6 @@ class Ruleta extends JuegoDeCasino{
            this.casino = casino;
            
          }
-
-         getBola(bola: Bola){
-           const Bola = {
-             1: 'marfil',
-             2: 'teflon'
-           }
-           return Bola;
-         }
-
-         Apostar(apostarColor: string, ){
-           if(apostarColor === 'rojo' || 'negro' ){
-            console.log('Usted gano $4000')  
-                }
-         else{
-          console.log('Usted perdio su apuesta');
-          
-         }
-         }
          
          getInfo():Ruleta{
            return this;

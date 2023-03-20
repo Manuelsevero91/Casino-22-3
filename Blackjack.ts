@@ -12,10 +12,7 @@ import { Casino } from "./Casino";
        this.cartas = cartas;   
        this.casino = casino;
       };
-
-      Apostar(){
-
-      }
+      
 
       getInfo():Blackjack{
         return this;
