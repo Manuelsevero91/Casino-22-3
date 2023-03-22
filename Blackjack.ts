@@ -1,18 +1,17 @@
 import JuegoDeCasino from "./JuegoDeCasino";
-import { Casino } from "./Casino";
+
 
 
   class Blackjack extends JuegoDeCasino{
     private cartas: number;
-    private casino : Casino;
 
-    public constructor(cartas: number, nombre: string, premio: number,
-         apuestaMax: number, apuestaMin: number,cantJugadores: number, casino: Casino){
-       super(nombre, premio, apuestaMax, apuestaMin, cantJugadores);
+    public constructor(cartas: number, nombreJuego: string, premio: number,
+         apuestaMax: number, apuestaMin: number,cantJugadores: number, nombreJugador: string, nombreCroupier: string){
+       super(nombreJuego, premio, apuestaMax, apuestaMin, cantJugadores, nombreJugador, nombreCroupier);
        this.cartas = cartas;   
-       this.casino = casino;
+    
       };
-      
+
 
       getInfo():Blackjack{
         return this;

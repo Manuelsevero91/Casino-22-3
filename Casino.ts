@@ -1,3 +1,6 @@
+import Ruleta from "./Ruleta";
+import Blackjack from "./Blackjack"
+
 
 enum Mesa{
   Poker, 
@@ -7,15 +10,16 @@ enum Mesa{
 
 export class Casino{
     private nombreCasino : string
-    private jugadorNombre: string;
-    private croupierNombre: string;
     private mesa : Mesa; 
+    private ruleta: Ruleta;
+    private blackjack: Blackjack; 
 
-     public constructor(nombreCasino: string, jugadorNombre: string, croupierNombre: string, mesa : Mesa){
+     public constructor(nombreCasino: string, mesa : Mesa, ruleta: Ruleta,  blackjack: Blackjack){
          this.nombreCasino = nombreCasino;
-         this.jugadorNombre = jugadorNombre;
-         this.jugadorNombre = jugadorNombre;
          this.mesa = mesa;
+         this.ruleta = ruleta;
+         this.blackjack = blackjack;
+
     }
 
     public getInfo():Casino{

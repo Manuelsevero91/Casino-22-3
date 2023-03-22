@@ -1,5 +1,4 @@
 import JuegoDeCasino from "./JuegoDeCasino";
-import  {Casino}  from "./Casino";
 
 enum Bola{
     marfil, 
@@ -10,16 +9,14 @@ class Ruleta extends JuegoDeCasino{
     private apostarColor: string;
     private apostarNumeros : number;
     private bola: Bola;
-    private casino: Casino;     
 
-
- public constructor(apostarColor: string, apostarNumeros: number,bola: Bola,nombre: string,
-   premio: number, apuestaMax: number, apuestaMin: number,cantJugadores:number, casino: Casino){
-           super(nombre, premio, apuestaMax, apuestaMin, cantJugadores);
+ public constructor(apostarColor: string, apostarNumeros: number,bola: Bola,nombreJuego: string,
+   premio: number, apuestaMax: number, apuestaMin: number,cantJugadores:number,
+    nombreJugador: string, nombreCroupier: string){
+           super(nombreJuego, premio, apuestaMax, apuestaMin, cantJugadores, nombreJugador, nombreCroupier);
            this.apostarColor = apostarColor;
            this.apostarNumeros = apostarNumeros;
            this.bola = bola;
-           this.casino = casino;
            
          }
          

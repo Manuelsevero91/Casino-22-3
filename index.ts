@@ -14,8 +14,9 @@ enum Mesa{
 }
 // const lasVegas = new Blackjack(2,4,'blackjack', 'john', 1000, 'curtis', 5000, 300, );
 
-let lasVegas1 = new Casino('nevada', 'johnis', 'curtis', Mesa.Ruleta)
+let lasVegas01 = new Blackjack(45, 'blackjack', 20000, 3000, 300, 6, 'Milton', 'Tom')
+let lasVegas = new Ruleta('rojo', 22,Bola.marfil, 'ruleta', 30000, 5000, 500, 10, 'jhonis', 'curtis')
+let lasVegas1 = new Casino('nevada', Mesa.Ruleta,lasVegas,lasVegas01)
 
-let lasVegas = new Ruleta('rojo', 20, Bola.marfil, 'john', 1000, 5000, 500, 10, lasVegas1)
 
-console.log(lasVegas.getInfo());
+console.log(lasVegas1.getInfo());
