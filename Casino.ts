@@ -22,15 +22,6 @@ export class Casino{
 
     }
 
-    // agregarJuego(juego: Casino, lista: Casino[]){
-    //     if(lista.push(juego)){
-    //       console.log('Se agrego juego a', lista);
-    //     }else{
-    //       console.log('No se puedo agrgear el juego');
-          
-    //     }
-    // }
-
     public getInfo():Casino{
       return this;
     }
