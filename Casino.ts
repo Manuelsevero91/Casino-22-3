@@ -1,8 +1,8 @@
 import Ruleta from "./Ruleta";
 import Blackjack from "./Blackjack"
+import JuegoDeCasino from "./JuegoDeCasino";
 
-
-enum Mesa{
+export enum Mesa{
   Poker, 
   Ruleta,
   Blackjack
@@ -21,6 +21,15 @@ export class Casino{
          this.blackjack = blackjack;
 
     }
+
+    // agregarJuego(juego: Casino, lista: Casino[]){
+    //     if(lista.push(juego)){
+    //       console.log('Se agrego juego a', lista);
+    //     }else{
+    //       console.log('No se puedo agrgear el juego');
+          
+    //     }
+    // }
 
     public getInfo():Casino{
       return this;

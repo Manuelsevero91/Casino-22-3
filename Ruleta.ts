@@ -1,6 +1,6 @@
 import JuegoDeCasino from "./JuegoDeCasino";
 
-enum Bola{
+export enum Bola{
     marfil, 
     teflon
 }
